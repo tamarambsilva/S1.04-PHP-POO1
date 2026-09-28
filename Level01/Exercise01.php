@@ -8,12 +8,16 @@
 // (se o salário for superior a 6000, ele deve pagar impostos).
 
 
-class Employee {
-    private string $name; 
-    private float $salary;
+class Employee { // classe, é o molde
+    private string $name; // atributo que guarda o nome
+    private float $salary; // atributo que guarda o salario
 
     public function __construct(string $name, float $salary) {
-        $this->name = $name;
+        
+        // ATRIBUIÇÃO
+        // Pegamos o parâmetro $name e colocamos
+        // dentro do atributo $this->name.
+        $this->name = $name; //metodo
         $this->salary = $salary;
     }
 
