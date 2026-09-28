@@ -8,26 +8,26 @@
 // (se o salário for superior a 6000, ele deve pagar impostos).
 
 
-class Empleado {
-    private $nome;
-    private $salario;
+class Employee {
+    private $name;
+    private $salary;
 
-    public function __construct($nome, $salario) {
-        $this->nome = $nome;
-        $this->salario = $salario;
+    public function __construct($name, $salary) {
+        $this->name = $name;
+        $this->salary = $salary;
     }
 
-    public function verificarImposto() {
-        if ($this->salario > 6000) {
-            echo "El empleado {$this->nome} debe pagar impuestos.";
+    public function checkTaxes() {
+        if ($this->salary > 6000) {
+            echo "The employee {$this->name} have to pay taxes";
         } else {
-            echo "El empleado {$this->nome} no debe pagar impuestos.";
+            echo "El empleado {$this->nome} Don't have to pay taxes";
         }
     }
 }
 
-$empleado = new Empleado("Juan", 7000);
-$empleado->verificarImposto();
+$employee = new Employee("Juan", 7000);
+$employee->checkTaxes();
 
 
 
