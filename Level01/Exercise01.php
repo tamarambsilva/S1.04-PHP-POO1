@@ -9,15 +9,16 @@
 
 
 class Employee {
-    private $name;
-    private $salary;
+    private string $name; 
+    private float $salary;
 
-    public function __construct($name, $salary) {
+    public function __construct(string $name, float $salary) {
         $this->name = $name;
         $this->salary = $salary;
     }
 
-    public function checkTaxes() {
+    public function checkTaxes(): void //void porque nao retorna nenhum valor
+    {
         if ($this->salary > 6000) {
             echo "The employee {$this->name} have to pay taxes";
         } else {
